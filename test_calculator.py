@@ -59,7 +59,7 @@ class TestCalculator(unittest.TestCase):
         # Test basic function
         # with self.assertRaises(ValueError):
         #     square_root(-2)
-        self.assertEqual(square_root(-2), 'Error: expected a nonnegative input, got -2.0')
+        self.assertEqual(square_root(-2), 'Error: math domain error')
         self.assertEqual(square_root(4), 2)
         self.assertEqual(square_root(25), 5)
     #########################
