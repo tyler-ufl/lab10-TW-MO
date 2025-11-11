@@ -1,3 +1,7 @@
+# https://github.com/tyler-ufl/lab10-TW-MO
+# Partner 1: Tyler Whittlesey
+# Partner 2: Michelle Ocon
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
