@@ -11,6 +11,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(2, 7), 9)
         self.assertEqual(add(4, 6), 10)
         self.assertEqual(add(3, 9), 12)
+    def test_subtract(self):
+        self.assertEqual(subtract(10, 7), 3)
+        self.assertEqual(subtract(12, 6), 6)
+        self.assertEqual(subtract(21, 11), 10)
     # ##########################
 
     ####### Partner 1
