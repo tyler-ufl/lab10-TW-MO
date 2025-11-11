@@ -8,9 +8,9 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ####### Partner 2
     def test_add(self):
-        self.assertEqual(add(2, 7), 14)
-        self.assertEqual(mul(-4, 6), -24)
-        self.assertEqual(mul(-3, -9), 27)
+        self.assertEqual(add(2, 7), 9)
+        self.assertEqual(add(4, 6), 10)
+        self.assertEqual(add(3, 9), 12)
     # ##########################
 
     ####### Partner 1
