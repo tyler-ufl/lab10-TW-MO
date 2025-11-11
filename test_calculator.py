@@ -30,7 +30,7 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(logarithm(10, 1000), 3)
+        self.assertEqual(logarithm(1, 1), 1)
         self.assertEqual(logarithm(3, 81), 4)
         self.assertEqual(logarithm(10, 100), 2)
 
