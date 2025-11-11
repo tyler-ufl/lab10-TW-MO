@@ -16,29 +16,20 @@ def hypotenuse(a, b):
         return math.hypot(a, b) # can have negative nums
     except ValueError as e:
         return f'Error: {e}'
-
 def add(a, b):
     return a + b
-
 def sub(a, b):
     return a - b
-
 def mul(a, b):
     return a * b
-
-def div(a, b):
-    try:
-        # assert a != 0, ZeroDivisionError
-        return b / a # raise ZeroDivisionError if a == 0
-    except ZeroDivisionError as e:
-        return f'Error: {e}'
-
-def log(a, b):
-    try:
-        # assert b > 0, ValueError
-        return math.log(b, a)# use math library + raise ValueError
-    except ValueError as e:
-        return f'Error: {e}'
-
+def div(b, a):
+    if b == 0: raise ZeroDivisionError("Cannot divide by zero!")
+    return a / b
 def exp(a, b):
     return a ** b
+def log(a, b):
+    if a <= 0 or a == 1:
+        raise ValueError("Logarithm base must be positive and not equal to 1.")
+    if b <= 0:
+        raise ValueError("Logarithm argument must be positive.")
+    return math.log(b, a)
