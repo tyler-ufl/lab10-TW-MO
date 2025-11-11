@@ -23,7 +23,7 @@ def sub(a, b):
 def mul(a, b):
     return a * b
 def div(b, a):
-    if b == 0: raise ZeroDivisionError("Cannot divide by zero!")
+    if b == 0: raise ZeroDivisionError("Cannot divide by zero.")
     return a / b
 def exp(a, b):
     return a ** b
