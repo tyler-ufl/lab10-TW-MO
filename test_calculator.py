@@ -62,6 +62,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(-2), 'Error: math domain error')
         self.assertEqual(square_root(4), 2)
         self.assertEqual(square_root(25), 5)
+        self.assertEqual(square_root(81), 9)
     #########################
 
 # Do not touch this
